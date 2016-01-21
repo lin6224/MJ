@@ -1,0 +1,88 @@
+@import "functions.scss";
+@import "common.scss";
+
+/* Medium Desktop (desktops, 992px-1199px) */
+/* #site-header */
+#site-header{
+	background:#fff;
+	#mobile-nav-btn{ 
+		display:none; 
+	}
+	.site-logo{
+		font-size:25px;
+	}
+	.navbar-toggle{
+		float:left;
+	}
+	.site-header-fixed-top{
+		//position:fixed;
+	}
+}
+#site-header-placeholder{
+	@include box(100%, auto);
+	display:none;
+}
+
+/* #site-footer */
+#site-footer{
+	position:relative;
+	padding:20px 0px;
+	#main-footer{
+		position:relative; 
+	}
+	.footer-nav{  }
+	.footer-nav li{
+		float:left;
+	}
+	.footer-nav li a{
+		display:block;
+		font-size:15px;
+		padding:5px 10px;
+		text-decoration:none;
+	}
+}
+
+
+/* Large desktop */
+ 
+@media (min-width: 1200px) {
+	
+}
+
+/* Landscape tablet */
+
+@media (max-width: 991px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	#site-header{
+		#mobile-nav-btn{
+			display:block;
+		}
+		.site-logo{
+			font-size:15px;
+		}
+	}
+}
+
+/* Mobile (Landscape) - Design for a width of 480px */
+@media (min-width: 480px) and (max-width: 767px) {
+	
+}
+
+/* Extra small devices - portrait (phones, less than 768px) */
+@media (max-width: 479px) {
+	
+}
+
+/* Basic print styles */
+@media only print {
+
+}
